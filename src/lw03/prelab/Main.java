@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+//Problem 1
         List<String> playlist = new ArrayList<>();
 
         Scanner sc1 = new Scanner(Main.class.getResourceAsStream("playlist.txt")); 
@@ -38,6 +39,7 @@ public class Main {
         }
         System.out.println(); 
 
+// problem 2
         Set<String> participants = new LinkedHashSet<>();
         int duplicates = 0;
         Scanner sc2 = new Scanner(Main.class.getResourceAsStream("participants.txt"));
@@ -62,6 +64,7 @@ public class Main {
         System.out.println("Duplicate registrations: " + duplicates);
         System.out.println();
 
+// problem 3 
         Map<String, Integer> inventory = new   LinkedHashMap<>();
         int failedSales = 0;
         Scanner sc3 = new Scanner(Main.class.getResourceAsStream("inventory.txt"));
