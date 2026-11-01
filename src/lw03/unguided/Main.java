@@ -1,3 +1,4 @@
+package lw03.unguided;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -9,13 +10,13 @@ public class Main {
 
         int rejected = 0;
 
-        Scanner sc1 = new Scanner(Main.class.getResourceAsStream("registration.txt"));
+        Scanner sc1 = new Scanner(Main.class.getResourceAsStream("registrations.txt"));
         while (sc1.hasNextLine()){
             registered.add(sc1.next());
         }
         System.out.println("===== Event Check-In Results =====");
 
-        Scanner sc2 = new Scanner (Main.class.getResourceAsStream("chekins.txt"));
+        Scanner sc2 = new Scanner (Main.class.getResourceAsStream("checkins.txt"));
         
         while (sc2.hasNextLine()){
             String id = sc2.nextLine();
