@@ -49,7 +49,7 @@ public class Main {
         int[] dist = new int[size];
         for (int i = 0; i < size; i++) {
             dist[i] = Integer.MAX_VALUE;
-        }
+        } 
         dist[start] = 0;
         boolean[] visited = new boolean[size];
         int[] prev = new int[size];
